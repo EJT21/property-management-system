@@ -1,6 +1,4 @@
-using System.ComponentModel.DataAnnotations;
-
-namespaceApartmentComplex.Models;
+namespace ApartmentComplex.Models;
 
 public class Apartment
 {
@@ -9,7 +7,7 @@ public class Apartment
 
   [Required]
   [Display(Name = "Unit Number")]
-  public string unitNumber { get; set; } = string.Empty;
+  public string UnitNumber { get; set; } = string.Empty;
 
   [Range(0, 10)]
   public int Bedrooms { get; set; }
